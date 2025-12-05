@@ -1,195 +1,166 @@
-# Alexia-
-Upwork 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dwchoices — Portfolio Professionnel</title>
-  <meta name="description" content="Portfolio professionnel de Dwchoices — Automatisation n8n, Scraping, IA, Dev Web, Backend, Sécurité, Android." />
-  <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#10b981;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
-    *{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
-    body{margin:0;background:linear-gradient(180deg,#071126 0%, #071b2a 100%);color:#e6eef6}
-    header{padding:28px 24px;display:flex;gap:18px;align-items:center;justify-content:space-between}
-    .brand{display:flex;gap:14px;align-items:center}
-    .logo{width:64px;height:64px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#062024}
-    h1{margin:0;font-size:20px}
-    p.lead{margin:4px 0 0;color:var(--muted)}
-    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
-    main{padding:20px;max-width:1100px;margin:0 auto}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
-    .card h3{margin:0 0 8px;font-size:16px}
-    .card p{margin:0;color:var(--muted);font-size:14px}
-    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--muted);font-size:12px;margin-top:10px}
-    .cta{display:inline-block;margin-top:12px;padding:8px 12px;border-radius:10px;background:var(--accent);color:#062024;text-decoration:none;font-weight:600}
-    .section-title{display:flex;align-items:center;justify-content:space-between;margin:24px 0 12px}
-    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-    .project-item{display:flex;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:14px;border-radius:10px;align-items:center;gap:12px}
-    .project-item .meta{flex:1}
-    .project-item code{display:inline-block;background:rgba(255,255,255,0.03);padding:6px;border-radius:6px;font-size:12px;color:var(--muted)}
-    footer{padding:24px;text-align:center;color:var(--muted)}
-    @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.projects{grid-template-columns:1fr}}
-    @media (max-width:600px){.grid{grid-template-columns:1fr}.brand h1{font-size:16px}}
-  </style>
+    <meta charset="UTF-8">
+    <title>Alexia AI - Simulation de Workflow n8n</title>
+    <style>
+        /* Styles CSS pour une meilleure lisibilité */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f4f8; padding: 20px; }
+        .container { max-width: 900px; margin: auto; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); }
+        h1 { color: #007bff; text-align: center; border-bottom: 3px solid #007bff; padding-bottom: 10px; margin-bottom: 25px; }
+        button { background-color: #28a745; color: white; padding: 12px 25px; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; margin-top: 20px; transition: background-color 0.3s; display: block; width: 100%; }
+        button:hover { background-color: #218838; }
+        #results { margin-top: 30px; }
+        .offer-card { border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 8px; background-color: #fcfcfc; }
+        .offer-card strong { color: #333; }
+        .category { background-color: #007bff; color: white; padding: 4px 8px; border-radius: 4px; display: inline-block; margin-bottom: 10px; font-weight: bold; }
+        pre { white-space: pre-wrap; background: #e9ecef; padding: 15px; border-radius: 6px; border-left: 5px solid #007bff; font-size: 0.9em; }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="brand">
-      <div class="logo">DW</div>
-      <div>
-        <h1>Dwchoices — Automatisation & IA</h1>
-        <p class="lead">n8n • Scraping • Machine Learning • Dev Web • Backend • Sécurité • Android</p>
-      </div>
-    </div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#projets">Projets</a>
-      <a href="#docs">Docs</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="hero" class="card">
-      <h2>Présentation rapide</h2>
-      <p style="color:var(--muted)">Je crée des solutions d'automatisation robustes (n8n), des scrapers résistants (Playwright, BeautifulSoup), des modèles IA actionnables et des applications web/backend prêtes pour production. Ce portfolio contient tous mes scripts et workflows organisés, prêts à être déployés ou adaptés pour tes missions.</p>
-      <div style="margin-top:12px">
-        <a class="cta" href="sandbox:/mnt/data/dwchoices_full_portfolio.zip" download>Télécharger le ZIP complet</a>
-        <span class="badge">20 workflows n8n • 15+ scripts • 5 projets web</span>
-      </div>
-    </section>
+<div class="container">
+    <h1>🤖 Alexia AI - Workflow n8n Simulé (JavaScript)</h1>
+    <p>Cliquez pour exécuter la chaîne de traitement complète : Scraping simulé, Analyse de la description, Génération du workflow JSON, Création du message "Alexia", et Check Doublons (utilisant le stockage local).</p>
 
-    <section id="services" class="section-title">
-      <h2 style="margin:0">Services</h2>
-      <small style="color:var(--muted)">Offres prêtes pour Upwork / GitHub</small>
-    </section>
+    <button onclick="runAlexiaWorkflow()">🚀 Déclencher le Workflow Alexia</button>
 
-    <div class="grid">
-      <article class="card">
-        <h3>Automatisation — n8n</h3>
-        <p>20 workflows structurés : scraping, enrichment, API chaining, gestion d'erreurs, retry, anti-ban et logs centralisés.</p>
-        <div class="badge">JSON prêt • Remplacer par tes workflows</div>
-        <div style="margin-top:12px"><a class="cta" href="#projets">Voir projets</a></div>
-      </article>
+    <div id="results"></div>
+</div>
 
-      <article class="card">
-        <h3>Scraping & Bots</h3>
-        <p>Playwright, Puppeteer, Requests, BeautifulSoup — scrapers headless avec rotation d'IP, gestion CAPTCHA et export CSV/JSON.</p>
-        <div class="badge">Playwright • BS4 • Requests</div>
-      </article>
+<script>
+    // --- DONNÉES SIMULÉES (Flux RSS Upwork n8n) ---
+    const SIMULATED_OFFERS = [
+        {
+            title: "Créer un workflow n8n pour Google Sheets et Trello",
+            link: "https://www.upwork.com/jobs/1",
+            description: "J'ai besoin d'automatiser l'enregistrement de leads dans Google Sheets puis de créer une carte Trello. Utilisation d'API REST pour la gestion des données.",
+            budget: 1200
+        },
+        {
+            title: "Intégration API Stripe et n8n pour facturation",
+            link: "https://www.upwork.com/jobs/2",
+            description: "Mettre en place un webhook pour capturer les paiements Stripe et lancer une séquence d'emails personnalisés via SendGrid.",
+            budget: 350
+        },
+        {
+            title: "Tâche de transfert de données simple avec n8n",
+            link: "https://www.upwork.com/jobs/3",
+            description: "J'ai un petit travail de synchronisation entre deux plateformes SaaS via n8n. Rien de complexe.",
+            budget: 80
+        }
+    ];
 
-      <article class="card">
-        <h3>IA & Machine Learning</h3>
-        <p>Préparation des données, entraînement, embeddings, RAG et pipelines d'inférence pour intégration API.</p>
-        <div class="badge">Python • scikit-learn • PyTorch</div>
-      </article>
+    // --- LOGIQUE DE GESTION DES DOUBLONS (Stockage Local) ---
+    const HISTORY_KEY = 'alexia_offers_history';
+    function loadHistory() {
+        try {
+            return JSON.parse(localStorage.getItem(HISTORY_KEY) || '[]');
+        } catch (e) {
+            return [];
+        }
+    }
+    function saveHistory(history) {
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+    }
 
-      <article class="card">
-        <h3>Développement Web</h3>
-        <p>Pages HTML/CSS/JS, apps React prêtes à déployer et intégration API Node/Flask.</p>
-        <div class="badge">React • Next.js • Responsive</div>
-      </article>
+    // --- FONCTION PRINCIPALE : REPRODUCTION DES NŒUDS N8N ---
+    function runAlexiaWorkflow() {
+        const history = loadHistory();
+        const resultsDiv = document.getElementById('results');
+        resultsDiv.innerHTML = '';
+        let processedCount = 0;
+        
+        // La simulation du Planification Cron/Scraper/Parser est ici.
 
-      <article class="card">
-        <h3>Backend & APIs</h3>
-        <p>Node.js (Express) et Python (Flask) — endpoints RESTful, authentification, webhooks et tâches cron.</p>
-        <div class="badge">REST • Webhooks • JWT</div>
-      </article>
+        SIMULATED_OFFERS.forEach(offer => {
+            
+            // Nœud "Check Doublons"
+            if (history.some(h => h.link === offer.link)) {
+                return; // Ignorer l'offre si elle est déjà dans l'historique
+            }
 
-      <article class="card">
-        <h3>Sécurité & Serveurs offline</h3>
-        <p>Prototypes de serveurs hors-ligne, chiffrement, procédures de sécurité pour transferts sensibles.</p>
-        <div class="badge">Chiffrement • Audit</div>
-      </article>
+            // Nœud "Analyser description & problème"
+            const descLower = offer.description.toLowerCase();
+            let category = 'Workflow Simple';
+            if (descLower.includes('google sheets')) {
+                category = 'Google Sheets Automation';
+            } else if (descLower.includes('api')) {
+                category = 'API Integration';
+            } else if (descLower.includes('webhook')) {
+                category = 'Webhook Trigger';
+            }
+            offer.category = category;
 
-      <article class="card">
-        <h3>Android / Termux</h3>
-        <p>Automatisation via Termux, scripts d'installation, sideload Magisk, workflows pour développement mobile.</p>
-        <div class="badge">Termux • Shell</div>
-      </article>
+            // Nœud "Générer workflow n8n"
+            const templates = {
+                'Google Sheets Automation': { nodes: [{ nodeType: 'GoogleSheets', operation: 'read' }], connections: {} },
+                'API Integration': { nodes: [{ nodeType: 'HTTP Request', operation: 'GET' }], connections: {} },
+                'Webhook Trigger': { nodes: [{ nodeType: 'Webhook', operation: 'listen' }], connections: {} },
+                'Workflow Simple': { nodes: [{ nodeType: 'Set', operation: 'set' }], connections: {} }
+            };
+            offer.workflowJson = templates[category];
 
-      <article class="card">
-        <h3>Support & Documentation</h3>
-        <p>README détaillés, guides d'installation, playbooks pour clients et livrables formatés pour Upwork.</p>
-        <div class="badge">Docs • Readme • Études de cas</div>
-      </article>
+            // Nœud "Créer guide détaillé"
+            let guide = '1️⃣ Importer workflow\n2️⃣ Configurer nodes\n3️⃣ Tester';
+            if (category === 'Google Sheets Automation') {
+                guide = '1️⃣ Importer workflow\n2️⃣ Configurer Google Sheets\n3️⃣ Lier node read\n4️⃣ Tester';
+            } else if (category === 'API Integration') {
+                guide = '1️⃣ Importer workflow\n2️⃣ Configurer HTTP Request\n3️⃣ Tester';
+            }
+            offer.guideInstallation = guide;
 
-      <article class="card">
-        <h3>Profil Upwork prêt</h3>
-        <p>Descriptions optimisées, propositions types, exemples de messages clients et portfolio prêt à coller.</p>
-        <div class="badge">Optimisé Upwork</div>
-      </article>
-    </div>
+            // Nœud "Créer message Alexia"
+            let note = 'Livraison sous 24h.';
+            if (offer.budget >= 1000) {
+                note = 'Priorité haute pour livraison ultra-rapide.';
+            }
+            
+            const message = `
+Bonjour [Nom client],
+Je suis Alexia, votre assistante virtuelle.
+J'ai préparé une solution n8n pour votre demande: ${offer.title} (Budget: ${offer.budget}€)
+Workflow prêt à importer (Catégorie: ${category})
 
-    <section id="projets" style="margin-top:26px">
-      <div class="section-title"><h2>Projets clés</h2><small style="color:var(--muted)">Exemples prêts dans l'archive</small></div>
-      <div class="projects">
-        <div class="project-item">
-          <div class="meta">
-            <h3>Pipeline Scraping • Playwright</h3>
-            <p class="muted">Script headless avec rotation d'agents, export JSON & erreur résiliente.</p>
-            <code>scraping/playwright_scraper.py</code>
-          </div>
-          <div>
-            <a class="cta" href="./scraping/playwright_scraper.py" download>Télécharger</a>
-          </div>
-        </div>
+**Guide détaillé**
+${offer.guideInstallation}
 
-        <div class="project-item">
-          <div class="meta">
-            <h3>Workflow n8n • Enrichment</h3>
-            <p class="muted">Workflow d'enrichissement : webhook → scraping → embeddings → stockage.</p>
-            <code>n8n_workflows/workflow_1.json</code>
-          </div>
-          <div><a class="cta" href="./n8n_workflows/workflow_1.json" download>Ouvrir</a></div>
-        </div>
+${note}
+Portfolio: <LIEN_PORTFOLIO>
+(Fichier workflow sécurisé par: Loveless@1991)
+            `.trim();
+            offer.message = message;
 
-        <div class="project-item">
-          <div class="meta">
-            <h3>Model Training • Classification</h3>
-            <p class="muted">Notebook / script pour entraînement et export du modèle en ONNX.</p>
-            <code>machine_learning/model_training.py</code>
-          </div>
-          <div><a class="cta" href="./machine_learning/model_training.py" download>Télécharger</a></div>
-        </div>
+            // Affichage des résultats (Simulation d'Envoi Email/WhatsApp)
+            const card = document.createElement('div');
+            card.className = 'offer-card';
+            card.innerHTML = `
+                <div class="category">${offer.category}</div>
+                <h3>${offer.title}</h3>
+                <p><strong>Lien:</strong> <a href="${offer.link}" target="_blank">${offer.link}</a></p>
+                <p><strong>Budget:</strong> ${offer.budget}€</p>
+                <p><strong>Workflow JSON généré:</strong></p>
+                <pre>${JSON.stringify(offer.workflowJson, null, 2)}</pre>
+                <p><strong>Message Alexia prêt à envoyer:</strong></p>
+                <pre>${offer.message}</pre>
+            `;
+            resultsDiv.appendChild(card);
+            
+            // Nœud "Logging complet"
+            history.push({ link: offer.link, title: offer.title, date: new Date().toISOString() });
+            processedCount++;
+        });
 
-        <div class="project-item">
-          <div class="meta">
-            <h3>API • Flask</h3>
-            <p class="muted">API REST avec endpoints sécurisés et webhook handler.</p>
-            <code>backend/python_flask/app.py</code>
-          </div>
-          <div><a class="cta" href="./backend/python_flask/app.py" download>Voir</a></div>
-        </div>
+        // Mise à jour de l'historique
+        saveHistory(history);
+        
+        if (processedCount > 0) {
+            resultsDiv.insertAdjacentHTML('afterbegin', `<p style="color: green; font-weight: bold;">✅ Succès ! ${processedCount} nouvelle(s) offre(s) traitée(s) et loggée(s).</p>`);
+        } else {
+            resultsDiv.insertAdjacentHTML('afterbegin', `<p style="color: orange; font-weight: bold;">⚠️ Aucune nouvelle offre à traiter. (Toutes les offres simulées étaient des doublons.)</p>`);
+        }
+    }
+</script>
 
-      </div>
-    </section>
-
-    <section id="docs" style="margin-top:26px">
-      <div class="section-title"><h2>Documentation & Guides</h2><small style="color:var(--muted)">Guides inclus dans l'archive</small></div>
-      <div class="grid" style="margin-top:10px">
-        <div class="card"><h3>README général</h3><p>Guide pour déployer le portfolio, installer dépendances et lancer les scripts.</p><a class="cta" href="./portfolio_docs/README.md" download>Ouvrir</a></div>
-        <div class="card"><h3>Profil Upwork</h3><p>Descriptions optimisées, propositions types et exemples de messages.</p><a class="cta" href="./portfolio_docs/PROFILE_UPWORK.md" download>Ouvrir</a></div>
-      </div>
-    </section>
-
-    <section id="contact" style="margin-top:26px" class="card">
-      <h2>Contact</h2>
-      <p style="color:var(--muted)">Prêt pour mission freelance (Upwork, GitHub, Fiverr). Pour demande rapide, envoie : <strong>claudetameklo91@gmail.com</strong></p>
-      <p style="color:var(--muted);margin-top:8px">Besoin d'une version personnalisée (React, images, études de cas réelles) — dis-moi exactement quelle section tu veux que je remplisse en premier.</p>
-    </section>
-
-  </main>
-
-  <footer>
-    <small>© Dwchoices — Portfolio généré automatiquement • Tous les scripts sont fournis dans l'archive ZIP.</small>
-  </footer>
-
-  <script>
-    // Small interactivity: smooth scrolling + copy link
-    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});}))
-  </script>
 </body>
 </html>
